@@ -1,26 +1,55 @@
 package ua.com.serzh.fibonacci;
 
+import java.util.Arrays;
+
 /**
  * Created by Serzh on 9/1/16.
  */
 public class Fibonacci {
     public static void main(String[] args) {
-
-        for (int counter = 0; counter <= 10; counter++)
+        int[] f = fib(7);
+        System.out.println(Arrays.toString(f));
+        for (int counter = 0; counter < 11; counter++) {
 //            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci(counter));
-            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci2(counter));
-
+//            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci2(counter));
+            System.out.printf("Fibonacci of %d is: %d\n", counter, fibSimple(counter));
+        }
     }
 
-    public static long fibonacci(long number) {
-        if ((number == 0) || (number == 1))
+    public static int fibonacci(int number) {
+        if ((number < 2)) {
             return number;
-        else
-            // recursion step
-            return fibonacci(number - 1) + fibonacci(number - 2);
+        } else {
+            int l = fibonacci(number - 1) + fibonacci(number - 2);
+            return l;
+        }
     }
 
     private static int fibonacci2(int n) {
         return n < 2 ? n : fibonacci2(n - 1) + fibonacci2(n - 2);
+    }
+
+    private static int fibSimple(int num) {
+        int first = 0;
+        int next = 1;
+        for (int i = 0; i < num; i++) {
+            int temp = next;
+            next = first + next;
+            first = temp;
+        }
+        return first;
+    }
+
+    private static int[] fib(int num) {
+        int[] result = new int[num];
+        int prev = 0;
+        int next = 1;
+        for (int i = 0; i < num; i++) {
+            result[i] = prev;
+            int temp = next;
+            next = prev + next;
+            prev = temp;
+        }
+        return result;
     }
 }
