@@ -15,4 +15,8 @@ public class Factorial {
         }
         return num * factorial(num - 1);
     }
+
+    static int factorial2(int n) {
+        return (n == 1) ? n : n * factorial2(n - 1);
+    }
 }

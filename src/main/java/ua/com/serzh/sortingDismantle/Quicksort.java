@@ -3,6 +3,8 @@ package ua.com.serzh.sortingDismantle;
 /**
  * Created by Serzh on 9/15/16.
  */
+//http://cybern.ru/qsort-java.html
+// http://www.algolist.net/Algorithms/Sorting/Quicksort
 public class Quicksort {
     private int[] numbers;
     private int number;

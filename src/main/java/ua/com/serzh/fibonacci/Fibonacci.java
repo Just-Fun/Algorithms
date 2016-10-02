@@ -7,8 +7,8 @@ import java.util.Arrays;
  */
 public class Fibonacci {
     public static void main(String[] args) {
-        int[] f = fib(7);
-        System.out.println(Arrays.toString(f));
+//        int[] f = fib(7);
+//        System.out.println(Arrays.toString(f));
         for (int counter = 0; counter < 11; counter++) {
 //            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci(counter));
 //            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci2(counter));
