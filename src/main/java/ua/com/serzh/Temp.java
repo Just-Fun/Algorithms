@@ -11,10 +11,22 @@ import static java.lang.Integer.parseInt;
  */
 public class Temp {
     public static void main(String[] args) {
-        String s = "";
-        System.out.println(s);
+        System.err.println(f());
     }
 
+       /* String s = "";
+        System.out.println(s);
+    }*/
+
+    public static int f() {
+        try {
+            System.err.println(0);
+        } catch (Exception e) {
+
+        } finally {
+            throw new Error();
+        }
+    }
 
 
     public static int[] quickSort(int[] array) {
@@ -25,9 +37,8 @@ public class Temp {
     }
 
 
-
     public static int sumRecurs(int num) {
-        if ( num == 1 ) {
+        if (num == 1) {
             return 1;
         }
         return num + sumRecurs(num - 1);
