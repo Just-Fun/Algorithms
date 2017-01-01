@@ -3,6 +3,7 @@ package ua.com.serzh;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import org.apache.log4j.Logger;
 
 import static java.lang.Integer.parseInt;
 
@@ -10,37 +11,15 @@ import static java.lang.Integer.parseInt;
  * Created by Serzh on 9/29/16.
  */
 public class Temp {
+    static Logger log = Logger.getLogger(Temp.class);
+
     public static void main(String[] args) {
-        System.err.println(f());
-    }
 
-       /* String s = "";
-        System.out.println(s);
-    }*/
 
-    public static int f() {
-        try {
-            System.err.println(0);
-        } catch (Exception e) {
 
-        } finally {
-            throw new Error();
-        }
+        log.info("srg");
     }
 
 
-    public static int[] quickSort(int[] array) {
 
-
-//        Swapper.swap(array, i, j);
-        return new int[2];
-    }
-
-
-    public static int sumRecurs(int num) {
-        if (num == 1) {
-            return 1;
-        }
-        return num + sumRecurs(num - 1);
-    }
 }
