@@ -63,7 +63,6 @@ public class BinarySeach {
 
     private static int binarySearch1(int[] list, int begin, int end, int query) {
 
-
         if (begin > end)
             return -1;
         int middle = (begin + end) / 2;
