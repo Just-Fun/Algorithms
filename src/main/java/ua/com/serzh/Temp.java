@@ -16,35 +16,8 @@ public class Temp {
 
     public static void main(String[] args) {
 
-        int[] ints = new int[]{5, 2, 9, 2};
-        Arrays.sort(ints);
-        log.info(Arrays.toString(ints)); // 2,2,5,9
-
-        int i = binarySearch(ints, 5);
-        log.info(i);
+        log.info("");
     }
 
-    private static int binarySearch(int[] array, int num) {
-        int low = 0;
-        int high = array.length - 1;
-
-        while (low < high) {
-            int middle = (low + high) / 2;
-
-            if (num == array[middle]) {
-                return middle;
-            }
-
-            if (num > array[middle]) {
-                low++;
-            }
-            if (num < array[middle]) {
-                low--;
-            }
-
-        }
-
-        return -1;
-    }
 
 }

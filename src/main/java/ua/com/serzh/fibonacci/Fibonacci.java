@@ -20,8 +20,7 @@ public class Fibonacci {
         if ((number < 2)) {
             return number;
         } else {
-            int l = fibonacci(number - 1) + fibonacci(number - 2);
-            return l;
+            return fibonacci(number - 1) + fibonacci(number - 2);
         }
     }
 
