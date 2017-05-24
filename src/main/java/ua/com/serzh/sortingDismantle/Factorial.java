@@ -15,7 +15,10 @@ public class Factorial {
     private static int factorial(int num) {
         int fact = 1;
 
-        for (; num > 0; fact *= num--) ;
+//        for (; num > 0; fact *= num--) ;
+        while (num > 0) {
+            fact *= num--;
+        }
 
         return fact;
     }
