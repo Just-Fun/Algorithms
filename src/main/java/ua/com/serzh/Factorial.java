@@ -1,4 +1,4 @@
-package ua.com.serzh.sortingDismantle;
+package ua.com.serzh;
 
 /**
  * Created by serzh on 2/16/16.
