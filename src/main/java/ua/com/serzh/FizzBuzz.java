@@ -53,8 +53,15 @@ public class FizzBuzz {
     private String fizzBuzzPredicate(int num) {
         String fizz = divBy3().test(num) ? FIZZ : "";
         String buzz = divBy5().test(num) ? BUZZ : "";
-        return fizz.isEmpty() && buzz.isEmpty() ? Integer.toString(num) : fizz + buzz;
+        return fizz.isEmpty() && buzz.isEmpty() ? Integer.toString(num) : fizz.concat(buzz);
     }
+
+    /*private String fizzBuzzPredicate(int num) {
+        StringBuilder result = new StringBuilder();
+        result.append(divBy3().test(num) ? FIZZ : "");
+        result.append(divBy5().test(num) ? BUZZ : "");
+        return result.length() == 0 ? Integer.toString(num) : result.toString();
+    }*/
 
     public void print(int from, int to) {
         IntStream.range(from, to)
