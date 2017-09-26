@@ -16,6 +16,7 @@ public class Fibonacci {
 
     public static int fibonacci(int number) {
 //temp in rebase
+//        some more changes
         if ((number < 2)) {
             return number;
         } else {
