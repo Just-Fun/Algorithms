@@ -1,7 +1,5 @@
 package ua.com.serzh.fibonacci;
 
-import java.util.Arrays;
-
 /**
  * Created by Serzh on 9/1/16.
  */
