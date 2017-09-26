@@ -1,7 +1,5 @@
 package ua.com.serzh.fibonacci;
 
-import java.util.Arrays;
-
 /**
  * Created by Serzh on 9/1/16.
  */
@@ -17,6 +15,7 @@ public class Fibonacci {
     }
 
     public static int fibonacci(int number) {
+//        master
         if ((number < 2)) {
             return number;
         } else {
