@@ -30,3 +30,5 @@ public class TwoSumSolution {
         throw new IllegalArgumentException("No two sum solution");
     }
 }
+
+// 1
