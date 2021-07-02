@@ -1,4 +1,4 @@
-package ua.com.serzh.leetcode;
+package ua.com.serzh.leetcode.tree_node;
 
 //  Definition for a binary tree node.
 public class TreeNode {

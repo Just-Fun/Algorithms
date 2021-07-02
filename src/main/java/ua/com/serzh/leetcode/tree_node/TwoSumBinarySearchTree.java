@@ -1,4 +1,4 @@
-package ua.com.serzh.leetcode;
+package ua.com.serzh.leetcode.tree_node;
 
 import java.util.HashSet;
 import java.util.Set;
