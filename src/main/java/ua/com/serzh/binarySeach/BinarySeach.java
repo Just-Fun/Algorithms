@@ -1,4 +1,4 @@
-package ua.com.serzh.sortingDismantle;
+package ua.com.serzh.binarySeach;
 
 
 import java.util.Arrays;

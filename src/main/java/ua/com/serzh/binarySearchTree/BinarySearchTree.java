@@ -1,4 +1,4 @@
-package ua.com.serzh.binarySearchTree2;
+package ua.com.serzh.binarySearchTree;
 
 
 /**

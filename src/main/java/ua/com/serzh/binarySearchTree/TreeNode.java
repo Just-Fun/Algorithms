@@ -1,4 +1,4 @@
-package ua.com.serzh.binarySearchTree2;
+package ua.com.serzh.binarySearchTree;
 
 /**
  * @author sergii.zagryvyi on 02.07.2017

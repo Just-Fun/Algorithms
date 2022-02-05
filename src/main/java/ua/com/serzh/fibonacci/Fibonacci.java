@@ -9,8 +9,8 @@ public class Fibonacci {
 //        System.out.println(Arrays.toString(f));
         for (int counter = 0; counter < 11; counter++) {
 //            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci(counter));
-//            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci2(counter));
-            System.out.printf("Fibonacci of %d is: %d\n", counter, fibSimple(counter));
+            System.out.printf("Fibonacci of %d is: %d\n", counter, fibonacci2(counter));
+//            System.out.printf("Fibonacci of %d is: %d\n", counter, fibSimple(counter));
         }
     }
 
