@@ -2,11 +2,14 @@ package ua.com.serzh.sreams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -15,6 +18,24 @@ import java.util.stream.Stream;
 public class GroupingBy {
 
     public static void main(String[] args) {
+        List<List<Integer>> lists = Arrays.asList(List.of(1, 5), List.of(11, 8), List.of(3, 4));
+
+        Set<Integer> treeSet = lists.stream()
+                .map(integers -> integers.stream()
+                                .map(integer -> integer + 1)
+                                .collect(Collectors.toSet())
+/*                        {
+                            Set<Integer> set = new HashSet<>();
+                            integers.forEach(integer -> set.add(integer + 1));
+                            return set;
+                        }*/
+                )
+                .flatMap(Collection::stream)
+                .collect(Collectors.toCollection(TreeSet::new));
+
+        System.out.println(treeSet);
+
+
         int[] arr = new int[]{8, 8, 8, 1, 5, 2, 5, 3, 3};
 
         List<Integer> integerList = Arrays.stream(arr)
@@ -27,8 +48,6 @@ public class GroupingBy {
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println(collect0);
-
-
 
 
         List<Integer> integers = List.of(8, 8, 8, 1, 5, 2, 5, 3, 3);
